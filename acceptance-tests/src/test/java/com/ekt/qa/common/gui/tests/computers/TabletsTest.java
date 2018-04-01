@@ -27,7 +27,7 @@ public class TabletsTest extends AbstractTest {
     }
 
     @Test(description = "Checking the price range", dataProvider = "priceMax")
-    @TestCaseID("3101")
+    @TestCaseID("2201")
     public void priceRangeTest(String priceMax) {
         TabletsPageObject tables = new TabletsPageObject();
 

@@ -18,7 +18,7 @@ public class ActionCamerasTest extends AbstractTest {
     }
 
     @Test(description = "Checking the bookmarks")
-    @TestCaseID("3101")
+    @TestCaseID("2101")
     public void bookMarksTest() {
         ActionCamerasPageObject actionCameras = new ActionCamerasPageObject();
         ItemPageObject item = new ItemPageObject();

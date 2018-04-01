@@ -20,7 +20,7 @@ public class MainTest extends AbstractTest {
     }
 
     @Test(dataProvider = "forClick")
-    @TestCaseID("2301")
+    @TestCaseID("1001")
     public void checkAllPagesTest(AbstractPageObject page) throws URISyntaxException {
         page.open();
         page.isOpen();
