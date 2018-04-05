@@ -1,5 +1,6 @@
 package com.ekt.qa.common.gui.webdriver;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,7 +17,7 @@ public class BaseSelenium {
     }
 
     public static void init() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Tools\\chromedriver.exe");
+        ChromeDriverManager.getInstance().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
