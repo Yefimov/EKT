@@ -23,27 +23,18 @@
           "pattern": "${pattern}"
         }
       },
-      "ReportPortalLog4j2Appender": {
-        "name": "ReportPortalAppender",
-        "PatternLayout": {
-          "pattern": "${pattern}"
+      "loggers": {
+        "root": {
+          "level": "all",
+          "AppenderRef": [
+            {
+              "ref": "StdOut"
+            },
+            {
+              "ref": "fileALL"
+            }
+          ]
         }
-      }
-    },
-    "loggers": {
-      "root": {
-        "level": "all",
-        "AppenderRef": [
-          {
-            "ref": "StdOut"
-          },
-          {
-            "ref": "fileALL"
-          },
-          {
-            "ref": "ReportPortalAppender"
-          }
-        ]
       }
     }
   }
